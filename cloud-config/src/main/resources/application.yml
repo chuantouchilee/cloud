@@ -1,0 +1,10 @@
+server: 
+  port: 80
+spring: 
+  cloud: 
+    config: 
+      uri: http://configserver.com
+  application:
+    name: foo
+  profiles:
+    active: dev
