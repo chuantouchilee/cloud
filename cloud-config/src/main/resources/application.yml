@@ -8,7 +8,7 @@ spring:
       server:
         git: 
           uri: https://github.com/chuantouchilee/cloud.git
-      	  searchPaths: config-yml
+          searchPaths: config-yml
       label: master
   profiles:
     active: dev
