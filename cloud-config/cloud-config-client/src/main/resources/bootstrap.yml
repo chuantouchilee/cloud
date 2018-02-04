@@ -5,7 +5,6 @@ spring:
     name: config-client
   cloud: 
     config: 
-      name: config-client
       profile: dev
       label: master
       uri: http://127.0.0.1
