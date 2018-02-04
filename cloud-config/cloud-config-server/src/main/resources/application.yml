@@ -1,3 +1,5 @@
+paramter: 
+  name: def
 server: 
   port: 80
 spring: 

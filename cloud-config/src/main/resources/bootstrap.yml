@@ -1,7 +1,0 @@
-spring: 
-  cloud: 
-    config: 
-      name: jdbc  
-      profile: test  
-      label: master  
-      uri: http://127.0.0.1
