@@ -5,17 +5,20 @@
     <artifactId>cloud</artifactId>
     <version>${version}</version>
   </parent>
-  <artifactId>cloud-base</artifactId>
+  <artifactId>cloud-eureka</artifactId>
+  <version>${eureka.version}</version>
+  <packaging>pom</packaging>
   
   <dependencies>
-     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-    </dependency>
+  	<dependency>
+  		<groupId>com.springcloud</groupId>
+  		<artifactId>cloud-base</artifactId>
+  		<version>${version}</version>
+  	</dependency>
   </dependencies>
+  <modules>
+  	<module>cloud-eureka-servercenter</module>
+  	<module>cloud-eureka-client</module>
+  	<module>cloud-eureka-client-1</module>
+  </modules>
 </project>

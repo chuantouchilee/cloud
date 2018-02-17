@@ -7,6 +7,7 @@
   </parent>
   <artifactId>cloud-config</artifactId>
   <description>springcloud config server</description>
+  <version>${config.version}</version>
   <packaging>pom</packaging>
   
   <modules>

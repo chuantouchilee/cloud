@@ -5,17 +5,23 @@
     <artifactId>cloud</artifactId>
     <version>${version}</version>
   </parent>
-  <artifactId>cloud-base</artifactId>
-  
+  <artifactId>cloud-zuul</artifactId>
   <dependencies>
-     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
+  	<dependency>
+  		<groupId>com.springcloud</groupId>
+  		<artifactId>cloud-base</artifactId>
+  		<version>${version}</version>
+  	</dependency>
+  	
+  	<dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka</artifactId>
     </dependency>
+
     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-zuul</artifactId>
     </dependency>
   </dependencies>
+  
 </project>
