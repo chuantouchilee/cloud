@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.springcloud.feign.service.impl.FeignServiceError;
 
+// feign 路段器，fallback
 @FeignClient(value = "EUREKA-SERVICE", fallback = FeignServiceError.class)
 public interface FeignService {
 

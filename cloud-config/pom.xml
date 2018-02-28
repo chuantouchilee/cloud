@@ -14,5 +14,6 @@
   	<module>cloud-config-server</module>
   	<module>cloud-config-client</module>
   	<module>cloud-config-base</module>
+  	<module>cloud-config-client1</module>
   </modules>
 </project>

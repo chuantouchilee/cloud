@@ -9,9 +9,9 @@ public class FeignServiceError implements FeignService {
 
 	@Override
 	public String say(String name) {
-	StringBuilder sb = new StringBuilder();
-	   sb.append("hi,").append(name).append(", error!");
-	   return sb.toString();
+		StringBuilder sb = new StringBuilder();
+		sb.append("hi,").append(name).append(", error!");
+		return sb.toString();
 	}
 
 }

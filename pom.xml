@@ -10,6 +10,7 @@
   	<springboot.version>2.0.0.BUILD-SNAPSHOT</springboot.version>
   	<springboot.dependencies.version>>Camden.SR7</springboot.dependencies.version>
   	<springboot.cloud.version>1.3.0.RELEASE</springboot.cloud.version>
+  	<spring.retry.version>1.2.0.RELEASE</spring.retry.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
     <java.version>1.7</java.version>  
     <java.encoding>UTF-8</java.encoding>  
@@ -17,6 +18,7 @@
     <config.version>0.0.1-SNAPSHOT</config.version>
     <base.version>0.0.1-SNAPSHOT</base.version>
     <eureka.version>0.0.1-SNAPSHOT</eureka.version>
+    
   	<!-- Finchley.M5 -->
   </properties>
   
@@ -25,6 +27,7 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.9.RELEASE</version>
  </parent>
+ <!-- dependencyManagement maven依赖包版本控制 ，统一版本，其他的子项目，只需引入articleId、groupId-->
  <dependencyManagement>
     <dependencies>
 	    <dependency>
@@ -90,8 +93,28 @@
             <groupId>org.springframework.cloud</groupId>  
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>${springboot.cloud.version}</version>  
-        </dependency>  
-  
+        </dependency>
+        
+        <!-- 消息总线 -->
+  		<dependency>  
+            <groupId>org.springframework.cloud</groupId>  
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+            <version>${springboot.cloud.version}</version>  
+        </dependency>
+        <!-- spring 重试机制 -->
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+            <version>${spring.retry.version}</version> 
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${springboot.cloud.version}</version> 
+        </dependency>
+        
+        
         <dependency>  
             <groupId>org.springframework.boot</groupId>  
             <artifactId>spring-boot-starter-test</artifactId>
