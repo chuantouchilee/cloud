@@ -4,3 +4,6 @@ spring:
     port: 5672
     username: lee
     password: 123456
+management: 
+  security: 
+    enabled: false # 忽略权限拦截
