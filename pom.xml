@@ -18,6 +18,7 @@
     <config.version>0.0.1-SNAPSHOT</config.version>
     <base.version>0.0.1-SNAPSHOT</base.version>
     <eureka.version>0.0.1-SNAPSHOT</eureka.version>
+    <zipkin.version>2.4.5</zipkin.version>
     
   	<!-- Finchley.M5 -->
   </properties>
@@ -141,6 +142,23 @@
             <artifactId>spring-cloud-config-server</artifactId> 
             <version>${springboot.cloud.version}</version> 
         </dependency>  
+        <!-- 服务追踪组件zipkin，Spring Cloud Sleuth集成了zipkin组件  -->
+        <dependency>
+	        <groupId>org.springframework.cloud</groupId>
+	        <artifactId>spring-cloud-starter-zipkin</artifactId>
+	        <version>${springboot.cloud.version}</version> 
+	    </dependency>
+        <dependency>
+	        <groupId>io.zipkin.java</groupId>
+	        <artifactId>zipkin-server</artifactId>
+	        <version>${zipkin.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	        <groupId>io.zipkin.java</groupId>
+	        <artifactId>zipkin-autoconfigure-ui</artifactId>
+	        <version>${zipkin.version}</version>
+	    </dependency>
     </dependencies>
 
 </dependencyManagement>
@@ -181,5 +199,6 @@
   	<module>cloud-ribbon</module>
   	<module>cloud-feign</module>
   	<module>cloud-zuul</module>
+  	<module>cloud-sleuth</module>
   </modules>
 </project>

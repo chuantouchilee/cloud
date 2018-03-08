@@ -16,6 +16,12 @@ public class HelloService {
 	    return restTemplate.getForObject("http://EUREKA-SERVICE/hi?name=" + name, String.class);
 	}
 	
+	
+	@HystrixCommand(fallbackMethod = "error")
+	public String sayService(String name) {
+	    return restTemplate.getForObject("http://EUREKA-SERVICE/say?name=" + name, String.class);
+	}
+	
    public String error(String name) {
 	   StringBuilder sb = new StringBuilder();
 	   sb.append("hi,").append(name).append(",sorry,error!");

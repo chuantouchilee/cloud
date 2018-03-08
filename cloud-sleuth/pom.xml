@@ -5,21 +5,22 @@
     <artifactId>cloud</artifactId>
     <version>${version}</version>
   </parent>
-  <artifactId>cloud-base</artifactId>
+  <artifactId>cloud-sleuth</artifactId>
   
   <dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter</artifactId>
+  	<dependency>
+  		<groupId>com.springcloud</groupId>
+  		<artifactId>cloud-base</artifactId>
+  		<version>${version}</version>
+  	</dependency>
+  	<dependency>
+        <groupId>io.zipkin.java</groupId>
+        <artifactId>zipkin-server</artifactId>
     </dependency>
+
     <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
+        <groupId>io.zipkin.java</groupId>
+        <artifactId>zipkin-autoconfigure-ui</artifactId>
     </dependency>
   </dependencies>
 </project>

@@ -12,5 +12,8 @@ import com.springcloud.feign.service.impl.FeignServiceError;
 public interface FeignService {
 
 	@RequestMapping(value = "/hi", method = RequestMethod.GET)
+	String hi(@RequestParam(value = "name") String name);
+	
+	@RequestMapping(value = "/say", method = RequestMethod.GET)
 	String say(@RequestParam(value = "name") String name);
 }

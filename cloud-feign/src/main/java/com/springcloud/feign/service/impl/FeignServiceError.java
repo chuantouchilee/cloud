@@ -14,4 +14,11 @@ public class FeignServiceError implements FeignService {
 		return sb.toString();
 	}
 
+	@Override
+	public String hi(String name) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("say,").append(name).append(", error!");
+		return null;
+	}
+
 }
