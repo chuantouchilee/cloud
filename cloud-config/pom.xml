@@ -3,13 +3,12 @@
   <parent>
     <groupId>com.springcloud</groupId>
     <artifactId>cloud</artifactId>
-    <version>${version}</version>
+    <version>SNAPSHOT-0.0.1</version>
   </parent>
   <artifactId>cloud-config</artifactId>
+  <version>SNAPSHOT-0.0.1</version>
   <description>springcloud config server</description>
-  <version>${config.version}</version>
   <packaging>pom</packaging>
-  
   <modules>
   	<module>cloud-config-server</module>
   	<module>cloud-config-client</module>

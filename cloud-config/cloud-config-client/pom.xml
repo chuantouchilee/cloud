@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.springcloud</groupId>
     <artifactId>cloud-config</artifactId>
-    <version>${config.version}</version>
+    <version>SNAPSHOT-0.0.1</version>
   </parent>
   <artifactId>cloud-config-client</artifactId>
       <dependencies>
@@ -46,7 +46,7 @@
     <dependency>
 	  	<groupId>com.springcloud</groupId>
 	    <artifactId>cloud-base</artifactId>
-	    <version>${version}</version>
+	    <version>SNAPSHOT-0.0.1</version>
   	</dependency>
     
   

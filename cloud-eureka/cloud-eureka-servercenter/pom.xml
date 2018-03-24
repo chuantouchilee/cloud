@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.springcloud</groupId>
     <artifactId>cloud-eureka</artifactId>
-    <version>${eureka.version}</version>
+    <version>SNAPSHOT-0.0.1</version>
   </parent>
   <artifactId>cloud-eureka-servercenter</artifactId>
   

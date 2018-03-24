@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.springcloud</groupId>
   <artifactId>cloud</artifactId>
-  <version>${version}</version>
+  <version>SNAPSHOT-0.0.1</version>
   <packaging>pom</packaging>
   
   <properties>
-  	<version>0.0.1-SNAPSHOT</version>
+  	<version>SNAPSHOT-0.0.1</version>
   	<springboot.version>2.0.0.BUILD-SNAPSHOT</springboot.version>
   	<springboot.dependencies.version>>Camden.SR7</springboot.dependencies.version>
   	<springboot.cloud.version>1.3.0.RELEASE</springboot.cloud.version>
@@ -15,10 +15,8 @@
     <java.version>1.7</java.version>  
     <java.encoding>UTF-8</java.encoding>  
     <springfox.swagger.version>2.2.2</springfox.swagger.version>
-    <config.version>0.0.1-SNAPSHOT</config.version>
-    <base.version>0.0.1-SNAPSHOT</base.version>
-    <eureka.version>0.0.1-SNAPSHOT</eureka.version>
     <zipkin.version>2.4.5</zipkin.version>
+    <spring.swagger>2.7.0</spring.swagger>
     
   	<!-- Finchley.M5 -->
   </properties>
@@ -159,6 +157,19 @@
 	        <artifactId>zipkin-autoconfigure-ui</artifactId>
 	        <version>${zipkin.version}</version>
 	    </dependency>
+	    
+	    <!-- swagger 生成api 框架 -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>${spring.swagger}</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>${spring.swagger}</version>
+		</dependency>
+	    
     </dependencies>
 
 </dependencyManagement>
@@ -200,5 +211,7 @@
   	<module>cloud-feign</module>
   	<module>cloud-zuul</module>
   	<module>cloud-sleuth</module>
+  	<module>cloud-api-swagger</module>
+  	<module>cloud-test</module>
   </modules>
 </project>

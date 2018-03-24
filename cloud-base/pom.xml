@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.springcloud</groupId>
     <artifactId>cloud</artifactId>
-    <version>${version}</version>
+    <version>SNAPSHOT-0.0.1</version>
   </parent>
   <artifactId>cloud-base</artifactId>
   
@@ -21,5 +21,13 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
+    <dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger2</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger-ui</artifactId>
+	</dependency>
   </dependencies>
 </project>

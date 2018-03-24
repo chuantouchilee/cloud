@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.springcloud</groupId>
     <artifactId>cloud</artifactId>
-    <version>${version}</version>
+    <version>SNAPSHOT-0.0.1</version>
   </parent>
   <artifactId>cloud-zuul</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.springcloud</groupId>
   		<artifactId>cloud-base</artifactId>
-  		<version>${version}</version>
+  		<version>SNAPSHOT-0.0.1</version>
   	</dependency>
   	
   	<dependency>

@@ -16,4 +16,8 @@ public interface FeignService {
 	
 	@RequestMapping(value = "/say", method = RequestMethod.GET)
 	String say(@RequestParam(value = "name") String name);
+	
+	default void print(){
+		System.out.println("default");
+	}
 }

@@ -5,20 +5,13 @@
     <artifactId>cloud</artifactId>
     <version>SNAPSHOT-0.0.1</version>
   </parent>
-  <artifactId>cloud-eureka</artifactId>
-  <version>SNAPSHOT-0.0.1</version>
-  <packaging>pom</packaging>
+  <artifactId>cloud-api-swagger</artifactId>
   
   <dependencies>
   	<dependency>
   		<groupId>com.springcloud</groupId>
   		<artifactId>cloud-base</artifactId>
-  		<version>${version}</version>
+  		<version>SNAPSHOT-0.0.1</version>
   	</dependency>
   </dependencies>
-  <modules>
-  	<module>cloud-eureka-servercenter</module>
-  	<module>cloud-eureka-client</module>
-  	<module>cloud-eureka-client-1</module>
-  </modules>
 </project>
